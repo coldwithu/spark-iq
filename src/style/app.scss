@@ -1,0 +1,115 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+h1 {
+  all: unset;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+html,
+body,
+#root,
+.container,
+.content {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+  height: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 $containerXPadding;
+  margin-top: 86px;
+
+  .content {
+  }
+}
+
+.faq {
+  width: 500px;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag {
+  // width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  padding: 12px 34px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 $containerXPaddingSM;
+  }
+
+  .faq-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .tag {
+    padding: 8px 20px;
+  }
+}
+// helpers
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%;
+}

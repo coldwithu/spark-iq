@@ -1,0 +1,30 @@
+@import "../../style/variables.scss";
+
+.color-card {
+  padding: 30px 17px 63px 17px;
+  border-radius: 20px;
+  position: relative;
+  &.card-lime {
+    background-color: #f2f2c5;
+  }
+  &.card-lime-dark {
+    background-color: #D3E09A;
+  }
+  &.card-purple {
+    background-color: #af96e38c;
+  }
+  &.card-purple-dark {
+    background-color: #6c5de680;
+  }
+}
+
+.card-button {
+  position: absolute;
+  bottom: 13px;
+  right: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 8px 24px;
+  border-radius: 10px;
+}

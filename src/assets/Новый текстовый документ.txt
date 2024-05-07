@@ -1,0 +1,45 @@
+// export const TelegramSection = () => {
+//   return (
+//     <>
+//       <div className="telegram-section">
+//         <div className="ts-info">
+//           <div className="ts-title">Оставьте заявку, и мы с вами свяжемся!</div>
+//           <div className="ts-text">
+//             Позвоним в течение 30 минут в рабочее время — с 8:00 до 21:00.
+//             Задавайте любые вопросы, а мы ответим и поможем подобрать занятия
+//           </div>
+//         </div>
+//         <div className="ts-form">
+//           <Input className="ts-input" placeholder="Имя" name="name" />
+//           <Input
+//             className="ts-input"
+//             placeholder="Номер телефона"
+//             name="phone"
+//           />
+//           <Input
+//             className="ts-input"
+//             placeholder="Электронная почта"
+//             name="email"
+//           />
+
+//           <div className="ts-checkbox">
+//             <input type="checkbox" id="check" />
+//             <label htmlFor="check">
+//               Принимаю условия <a href="/#">соглашения</a> и даю  
+//               <a href="/#">
+//                 согласие на обработку своих персональных данных  на условиях
+//                 политики конфиденциальности
+//               </a>
+//             </label>
+//           </div>
+
+//           <Button
+//             className={"ts-form-btn"}
+//             colorHEX="#D3E09A"
+//             label="Отправить заявку"
+//           />
+//         </div>
+//       </div>
+//     </>
+//   );
+// };

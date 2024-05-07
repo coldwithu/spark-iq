@@ -1,0 +1,65 @@
+@import "../style/variables.scss";
+
+nav {
+    margin-left: 64px;
+  ul {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    list-style-type: none;
+    li {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+
+      a {
+        color: black;
+        text-decoration: none;
+        transition: $baseTransition;
+        &:hover {
+          color: $colorViloetPrimary;
+        }
+      }
+    }
+  }
+}
+
+.phone-number {
+  text-align: end;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  .caption {
+    font-size: 12px;
+    line-height: 15px;
+    color: #7b7b7b;
+    transition: $baseTransition;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+      color: $colorViloetPrimary;
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  nav {
+    margin-left: 0px;
+    ul  {
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 1048px) {
+  nav {
+    display: none;
+  }
+  .phone-number {
+    display: none;
+  }
+  .header-action-button {
+    display: none;
+  }
+}

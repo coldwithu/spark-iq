@@ -1,0 +1,40 @@
+
+.line-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 7.5px 0 10.5px 0;
+  border-top: 1px solid black;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: left;
+
+  .bold {
+    font-weight: 600;
+    max-width: 50%;
+    text-align: end;
+  }
+}
+
+.direction-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.direction-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 42px;
+}
+
+.card-flex-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.direction-card {
+    flex: 1 1 310px;
+}

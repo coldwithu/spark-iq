@@ -1,0 +1,65 @@
+@use "sass:color";
+
+.variants-section {
+  border-top: 1px solid black;
+  padding-bottom: 100px;
+  .variant-item {
+    width: 100%;
+    flex-grow: 1;
+    padding: 28px 0 47px 0;
+    display: flex;
+    gap: 50px;
+    border-bottom: 1px solid black;
+
+    &__more-btn {
+      border-radius: 5px;
+      padding: 12px 15px;
+    }
+    &__title {
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 42px;
+      text-align: left;
+      color: color.scale(black, $lightness: 35%);
+      width: 500px;
+      // min-width: 500px;
+    }
+
+    &__tags {
+      max-width: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .variants-section {
+    .variant-item {
+      &__title {
+        width: 300px;
+        flex-shrink: 0;
+      }
+
+      &__tags {
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .variants-section {
+    .variant-item {
+      flex-direction: column;
+      &__more-btn {
+        padding: 8px 16px;
+      }
+      &__title {
+      }
+
+      &__tags {
+      }
+    }
+  }
+}

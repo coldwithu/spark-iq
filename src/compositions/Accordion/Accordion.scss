@@ -1,0 +1,61 @@
+@import "../../style/variables.scss";
+
+.accordion-item {
+  background-color: white;
+  overflow: hidden;
+  .aci-header {
+    position: relative;
+    z-index: 2;
+    padding: 23px 0;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+  .aci-body {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0px 20px;
+    display: flex;
+    max-height: 0;
+    transition: max-height 1s ease;
+    transition: padding 0.4s ease;
+
+    &.toggled {
+      max-height: 200px;
+      padding: 20px;
+      transition: max-height 1s ease;
+      transition: padding 0.4s ease;
+    }
+  }
+}
+.aci-toggler {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-radius: 50%;
+  transition: $baseTransition;
+
+  img {
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: $baseTransition;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background-color: #f7f7dc;
+  }
+
+  &.toggled {
+    transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,28 @@
+.teachers-card {
+    height: 400px;
+    max-width: 320px;
+    position: relative;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 13px 19px 21px 19px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  &__name {
+    text-decoration: underline;
+
+    font-weight: 600;
+  }
+  &__lesson {
+    font-weight: 600;
+  }
+
+  &__button {
+    position: absolute;
+    right: 19px;
+    bottom: 21px;
+    padding: 8px 18px;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,45 @@
+@use "sass:color";
+@import "../../style/variables.scss";
+
+
+.button {
+    cursor: pointer;
+    transition: $baseTransition;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    &-m{
+
+    }
+
+    &-lime {
+        background-color: $colorLimeBg;
+
+        &:hover {
+            background-color: color.scale($colorLimeBg, $lightness: 20%);
+        }
+        &:active {
+            background-color:  darken($colorLimeBg, 10%);
+        }
+    }
+
+    &-transparent {
+        background-color: transparent;
+    }
+
+    &.btn-disabled {
+        background-color: #d6d6d6 !important;
+        color: #a1a1a1;
+        border-color: #a1a1a1;
+    }
+}
+
+.header-action-button {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
