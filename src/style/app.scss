@@ -74,6 +74,10 @@ body,
 @media (max-width: 992px) {
   .container {
     padding: 0 $containerXPaddingSM;
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
   }
 
   .faq-container {
@@ -84,6 +88,10 @@ body,
   .tag {
     padding: 8px 20px;
   }
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
 }
 // helpers
 
